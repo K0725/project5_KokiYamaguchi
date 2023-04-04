@@ -49,15 +49,15 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  color: black;
+  color: orange;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 a:hover {
-  color: black;
+  color: orange;
 }
 
 label {

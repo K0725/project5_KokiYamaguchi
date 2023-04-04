@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Brew from "./components/Brew";
+import {Link} from "react-router-dom";
 
 
 function App() {
@@ -52,25 +53,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Explore our brewry!</h1>
-
-      <div className="Summary">
-        <div className="Sum Total">
-          <strong>TOTAL</strong>
-          <p>{totalNum}</p>
-        </div>
-        <div className="Sum Cities">
-          <strong>CITIES</strong>
-          <p>{Object.keys(totalCities).length}</p>
-        </div>
-        <div className="Sum Types">
-          <strong>TYPES</strong>
-          <p>{Object.keys(totalTypes).length}</p>
-        </div>
-      </div>
+      <h1>Let's Explore our brewry!</h1>
 
       <div className="Filter">
-      
+
 
         <label for="zip">Zip Code: </label>
         <input
@@ -87,6 +73,20 @@ function App() {
 
       {brewery.map((brew) => {
         return (
+          <Link
+            key={brew.id}
+            to={`/detail/${brew.id}`}
+            state={{
+              id: brew.id,
+              name: brew.name,
+              address: `${brew.street}, ${brew.city}, ${brew.state} ${brew.postal_code}`,
+              longitude: brew.longitude,
+              latitude: brew.latitude,
+              type: brew.brewery_type,
+              website: brew.website_url,
+              phone: brew.phone,
+            }}
+          >
           <Brew
             key={brew.id}
             name={brew.name}
@@ -98,6 +98,7 @@ function App() {
             phone={brew.phone}
             type={brew.brewery_type}
           />
+          </Link>
         );
       })}
     </div>

@@ -56,3 +56,24 @@
 .BrewCard button {
   background-color: white;
 }
+.NavBar nav {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-link {
+  color: blue;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
