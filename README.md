@@ -1,31 +1,28 @@
-# Web Development Project 5 - *Explore bewery store*
+# Web Development Project 6 - *Koki Yamaguchi*
 
 Submitted by: **Koki Yamaguchi**
 
-This web app: **insert description**
+This web app: **Explore our bewery**
 
-Time spent: **9** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x ] **The list displays a list of data fetched using an API call**
-- [ ] **Data uses the useEffect React hook and async/await syntax**
-- [ ] **The app dashboard includes at least three summary statistics about the data such as**
-  - [ ] *insert details*
-- [ ] **A search bar allows the user to search for an item in the fetched data**
-- [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x ] **The app includes at least two unique chart developed using the fetched data that tell an interesting story**
+- [ x] **Clicking on an item in the list view displays more details about it**
+- [ x] **Clicking on an item has a direct, unique link to that item's detail view page**
+
 
 The following **optional** features are implemented:
 
-- [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
+- [ x] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ x] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [ x] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
@@ -46,7 +43,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Koki Yamaguchi]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
